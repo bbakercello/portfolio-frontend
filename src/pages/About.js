@@ -23,8 +23,8 @@ function About(props) {
 
   // define a function that will return the JSX needed once we get the data
   const loaded = () => (
-    <div>
-      <h3>{about.email}</h3>
+    <div className="about">
+      <h4>{about.email}</h4>
       <p>{about.bio}</p>
     </div>
   );
