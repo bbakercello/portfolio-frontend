@@ -30,7 +30,7 @@ const loaded = () => {
   console.log(projects)
   return( 
   <>
-  {projects.map((project, index) => (
+  {projects.map((project, index, projects) => (
     <div>
       <h1>{project.name}</h1>
       <img src={project.image} alt="project"/>
@@ -42,7 +42,8 @@ const loaded = () => {
       </a>
     </div>
     ))}
-  </>)
+  </>
+  )
   }
   
   

@@ -5,3 +5,17 @@ body {
 .title {
   text-align: center
 }
+.footer {
+  text-align: center
+}
+
+.home {
+  text-align: center
+}
+
+.profile-pic {
+  width: 60%;
+  margin-left: 20%;
+  margin-top:4%;
+  border-radius: 3%
+}

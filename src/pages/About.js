@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 
+
+
 function About(props) {
   // create state to hold about data
   const [about, setAbout] = useState(null);
@@ -26,6 +28,7 @@ function About(props) {
     <div className="about">
       <h4>{about.email}</h4>
       <p>{about.bio}</p>
+      <img className="profile-pic" src="https://i.imgur.com/9diMR92.jpg" alt="bio-pic"/>
     </div>
   );
 

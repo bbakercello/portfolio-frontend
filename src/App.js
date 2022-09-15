@@ -16,13 +16,13 @@ function App() {
 const URL = 'https://benbakerportfolio.herokuapp.com/'
   return (
     <div className="App">
-    <Header />
+    <Header URL={URL}/>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/projects" element={<Projects URL={URL} key={Projects} />} />
         <Route path="/about" element={<About URL={URL} />} />
       </Routes>
-      <Footer />
+      <Footer URL={URL}/>
     </div>
   );
 }
