@@ -19,10 +19,13 @@ function Footer(props){
     console.log(footer)
   return (
     <>
-    <ul className="footer-icons">
-      <li><a href={footer.linkdin}><img src="https://i.imgur.com/IcKIpzf.jpg" alt="Linkdin"title="linkedin icon"/></a></li>
-      <li><a href={footer.github}><img src="https://i.imgur.com/W4UWplu.png" alt="Github"title="github icons"/></a></li>
+    <div className="footer-container">
+    <ul className="footer">
+      <li className="footer-icons"><a href={footer.linkdin}><img className="footer-icons"  src="https://i.imgur.com/IcKIpzf.jpg" alt="Linkdin"title="linkedin icon"/></a></li>
+      <li ><a href={footer.github}><img className="footer-icons" src="https://i.imgur.com/W4UWplu.png" alt="Github"title="github icons"/></a></li>
     </ul>
+    </div>
+    
     </>
 
   )
