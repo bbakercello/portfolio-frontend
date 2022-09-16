@@ -19,3 +19,13 @@ body {
   margin-top:4%;
   border-radius: 3%
 }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.footer-icons{
+  max-width: 2%
+}

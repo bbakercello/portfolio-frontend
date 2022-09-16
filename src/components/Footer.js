@@ -2,9 +2,9 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 
 
-const Footer = (props) => {
+function Footer(props){
   const [footer, setFooter] = useState(null);
-console.log(props)
+// console.log(props)
   const getFooterData = async () => {
     const response = await fetch(props.URL + "footer")
 
@@ -16,9 +16,14 @@ console.log(props)
   useEffect(()=> {getFooterData()}, []);
 
   const loaded = () => {
+    console.log(footer)
   return (
-    <h1 className="footer">Footer</h1>
-
+    <>
+    <ul className="footer-icons">
+      <li><a href={footer.linkdin}><img src="https://i.imgur.com/IcKIpzf.jpg" alt="Linkdin"title="linkedin icon"/></a></li>
+      <li><a href={footer.github}><img src="https://i.imgur.com/W4UWplu.png" alt="Github"title="github icons"/></a></li>
+    </ul>
+    </>
 
   )
 }
