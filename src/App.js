@@ -24,7 +24,7 @@ const URL = 'https://benbakerportfolio.herokuapp.com/'
         <Route path="/projects" element={<Projects URL={URL} key={Projects} />} />
         <Route path="/about" element={<About URL={URL} />} />
       </Routes>
-      <Footer URL={URL}/>
+      <Footer className="footer-container" URL={URL}/>
     </div>
   );
 }

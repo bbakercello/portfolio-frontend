@@ -24,6 +24,7 @@ function Footer(props){
       <li className="footer-icons"><a href={footer.linkdin}><img className="footer-icons"  src="https://i.imgur.com/IcKIpzf.jpg" alt="Linkdin"title="linkedin icon"/></a></li>
       <li ><a href={footer.github}><img className="footer-icons" src="https://i.imgur.com/W4UWplu.png" alt="Github"title="github icons"/></a></li>
     </ul>
+    <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Ben Baker</p>
     </div>
     
     </>
