@@ -31,7 +31,7 @@ const loaded = () => {
   return( 
   <>
   {projects.map((project, index, projects) => (
-    <div>
+    <div key={index}>
       <h1>{project.name}</h1>
       <img src={project.image} alt="project"/>
       <a href={project.git}>

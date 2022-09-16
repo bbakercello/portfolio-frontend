@@ -38,8 +38,10 @@ body {
 .footer {
   display: flex;
   flex-direction: row;
-  text-align: center;
   position: relative;
+  width: 40%;
+  text-align: center;
+  margin-left: 25%
 }
 
 .about {
@@ -49,10 +51,19 @@ body {
 }
 
 li {
-  list-style: none
+  text-align: center;
+  list-style: none;
+  width: 100%
 }
 
 .footer-icons{
-  max-width: 33%;
-  max-height: 33%
+  max-width: 40%;
+  
+  text-align: center;
+  
+  
+}
+
+.copyright {
+  font-size: 15px;
 }
