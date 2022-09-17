@@ -2,9 +2,10 @@ body {
   font-family: 'Space Mono', monospace;
   min-height: 100%;
   width: 100%;
-  background-color: #f1f1f1
-
+  background-color: #f1f1f1;
 }
+
+
 
 .title {
   text-align: center
@@ -15,24 +16,36 @@ body {
 }
 
 .home {
-  text-align: center
+  text-align: center;
+  height: 100vw;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 30px 20px;
+  border-top: 1px solid black;
 }
 
 .profile-pic {
   width: 60%;
   margin-left: 20%;
-  margin-top:4%;
+  margin-top: 4%;
   border-radius: 3%
 }
-.footer-container {
-  position: sticky;
-  margin-bottom: 3px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+
+.about {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
   text-align: center;
-  
-  
+  margin-top: 10px;
+  border-top: 1px solid black
+}
+
+.footer-container {
+  margin-bottom: 3px;
+  position: relative;
+  bottom: 0;
+  text-align: center;
 }
 
 .footer {
@@ -41,14 +54,10 @@ body {
   position: relative;
   width: 40%;
   text-align: center;
-  margin-left: 25%
+  
 }
 
-.about {
-  width: 90vw;
-  margin: 0 auto;
-  padding: 30px 20px
-}
+
 
 li {
   text-align: center;
@@ -58,12 +67,48 @@ li {
 
 .footer-icons{
   max-width: 40%;
-  
   text-align: center;
-  
-  
+  display: flex;
+  flex-direction: row;
+  margin-left:133%;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright {
   font-size: 15px;
+  margin-right: 10%
+}
+
+.project-container {
+  max-width: 80%;
+  align-items: center;
+  display: grid;
+    grid-template-columns: 66vw;
+    grid-template-rows: 1fr 40vw;
+    margin: 40px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-top: 1px solid black;
+    padding: 64px;
+    justify-items: center;
+    
+}
+
+.project-container > h1{
+  grid-row: 1;
+}
+
+.project-container > a {
+  width: 25%
+}
+
+.project-photo {
+  height: 100%;
+  grid-row: 2;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
 }

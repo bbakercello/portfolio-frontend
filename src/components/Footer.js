@@ -16,7 +16,7 @@ function Footer(props){
   useEffect(()=> {getFooterData()}, []);
 
   const loaded = () => {
-    console.log(footer)
+    
   return (
     <>
     <div className="footer-container">

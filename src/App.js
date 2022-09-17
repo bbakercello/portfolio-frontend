@@ -21,7 +21,7 @@ const URL = 'https://benbakerportfolio.herokuapp.com/'
     <Header URL={URL} key={Footer}/>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects URL={URL} key={Projects} />} />
+        <Route path="/projects" element={<Projects URL={URL} key={Projects.index} />} />
         <Route path="/about" element={<About URL={URL} />} />
       </Routes>
       <Footer className="footer-container" URL={URL}/>
