@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import ContactForm from './ContactForm';
+import {Spinner} from  'evergreen-ui'
 
 
 function Footer(props){
@@ -19,19 +21,23 @@ function Footer(props){
     
   return (
     <>
+    <ContactForm className="contact-form-container"/>
     <div className="footer-container">
     <ul className="footer">
       <li ><a href={footer.linkdin}><img className="footer-icons"  src="https://i.imgur.com/IcKIpzf.jpg" alt="Linkdin"title="linkedin icon"/></a></li>
       <li ><a href={footer.github}><img className="footer-icons"  src="https://i.imgur.com/W4UWplu.png" alt="Github"title="github icons"/></a></li>
     </ul>
-    <p className="copyright">Copyright &copy; <script>document.write(new Date().getFullYear());</script>Ben Baker</p>
-    </div>
     
+    </div>
+    <p className="copyright">Copyright &copy; 
+      <span>{new Date().getFullYear()} </span> 
+      Ben Baker</p>
     </>
 
   )
 }
-return footer ? loaded() : <h1>Loading...</h1>;
+return footer ? loaded() : <h1><Spinner 
+size={40}/>Loading...</h1>;
 }
 
 export default Footer

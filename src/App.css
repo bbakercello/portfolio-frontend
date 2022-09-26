@@ -2,7 +2,7 @@ body {
   font-family: 'Space Mono', monospace;
   min-height: 100%;
   width: 100%;
-  background-color: #f1f1f1;
+  background-color: rgba(113,140,155,.4)
 }
 
 
@@ -25,11 +25,14 @@ body {
   border-top: 1px solid black;
 }
 
+
+
 .profile-pic {
   width: 60%;
-  margin-left: 20%;
   margin-top: 4%;
+  margin-bottom: 4%;
   border-radius: 3%
+
 }
 
 .about {
@@ -41,17 +44,25 @@ body {
   border-top: 1px solid black
 }
 
+.about > p {
+  text-align: left;
+}
+
 .footer-container {
+  width: 90vh;
   margin-bottom: 3px;
-  position: relative;
-  bottom: 0;
-  text-align: center;
+  /* position: relative; */
+  /* margin: 0 auto; */
+  display: flex;
+  /* justify-content:space-around
+   */
+   justify-content: flex-center;
+   margin-left: 12.5%
 }
 
 .footer {
   display: flex;
   flex-direction: row;
-  position: relative;
   width: 40%;
   text-align: center;
   
@@ -62,26 +73,24 @@ body {
 li {
   text-align: center;
   list-style: none;
-  width: 100%
+  width: 80%
 }
 
 .footer-icons{
-  max-width: 40%;
+  width: 20%;
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  margin-left:133%;
-  justify-content: center;
-  align-items: center;
+
+  
 }
 
 .copyright {
-  font-size: 15px;
-  margin-right: 10%
+  font-size: 20%;
+  text-align: center;
+  margin-right: 15%
+
 }
 
 .project-container {
-  max-width: 80%;
   align-items: center;
   display: grid;
     grid-template-columns: 66vw;
@@ -92,6 +101,7 @@ li {
     border-top: 1px solid black;
     padding: 64px;
     justify-items: center;
+    
     
 }
 
